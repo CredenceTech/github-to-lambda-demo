@@ -14,7 +14,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws lambda update-function-code --function-name handler \--zip-file fileb://github-to-lambda-demo.zip
+      - aws lambda update-function-code --function-name github-to-lambda-demo \--zip-file fileb://github-to-lambda-demo.zip
 
 artifacts:
   files:
