@@ -1,0 +1,15 @@
+{
+  "name": "github-to-lambda-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.438.0",
+    "aws-sdk": "^2.1485.0"
+  }
+}
