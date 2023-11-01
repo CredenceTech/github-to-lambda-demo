@@ -12,9 +12,9 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Node.js code
   post_build:
-    commands:
+    commands: 
       - echo Build completed on `date`
-      - aws lambda update-function-code --function-name github-to-lambda-demo \--zip-file fileb://github-to-lambda-demo.zip
+      - aws lambda update-function-code --function-name github-to-lambda-demo \--zip-file fileb://wechain-dev.s3.sa-east-1.amazonaws.com/Build.zip
 
 artifacts:
   files:
