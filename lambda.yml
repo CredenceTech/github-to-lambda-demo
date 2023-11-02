@@ -13,7 +13,7 @@ phases:
   post_build:
     commands: 
       - echo Build completed on `date`
-      - aws lambda update-function-code \--function-name  github-to-lambda-demo \--s3-bucket wechain-dev --s3-key Build.zip
+      - aws lambda update-function-code \--function-name  github-to-lambda-demo \--s3-bucket wechain-dev --s3-key NewBuild.zip
 
 artifacts:
   files:
