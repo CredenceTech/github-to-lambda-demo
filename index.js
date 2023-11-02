@@ -10,7 +10,7 @@ module.exports.handler = async (event) => {
     //     console.log('Testing');
     // }
     // return `Successfully processed ${event.Records.length} messages.`;
-    return `Successfully processed  messages.`;
+    return `Testing Successfully processed  messages.`;
 };
 
 // export const handler = async (event) => {
