@@ -3,14 +3,14 @@
 console.log('Loading function');
 
 module.exports.handler = async (event) => {
-    console.log('Testing');
+    //console.log('Testing');
     //console.log('Received event:', JSON.stringify(event, null, 2));
     // for (const { messageId, body } of event.Records) {
     //     console.log('SQS message %s: %j', messageId, body);
     //     console.log('Testing');
     // }
     // return `Successfully processed ${event.Records.length} messages.`;
-    return `Successfully processed  messages.`;
+    return `Testing Successfully processed  messages.`;
 };
 
 // export const handler = async (event) => {
