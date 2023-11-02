@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+        nodejs: 18
+    commands:
+      - echo Installing source NPM dependencies...
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+  post_build:
+    commands: 
+      - echo Build completed on `date`
+      - aws lambda update-function-code \--function-name  SendAnnouncementProcess \--s3-bucket wechain-dev --s3-key Build.zip
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
