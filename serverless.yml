@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: Dummy
+service: github-to-lambda-demo
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
